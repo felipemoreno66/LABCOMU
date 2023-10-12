@@ -109,7 +109,7 @@ nav.sticky {
   height: 100vh;                                  /* Establece la altura de la sección al 100% del alto de la ventana (viewport height) */
   width: 100%;                                    /* Establece el ancho de la sección al 100% del ancho disponible */
   background-color: #fefeff;                    /* Establece un color de fondo blanco*/
-  background-image: url('./images/LOGO17.jpg');   /* Agrega la imagen de fondo "logo.png" */
+  background-image: url('./LOGO17.jpg');   /* Agrega la imagen de fondo "logo.png" */
   background-size: contain;                       /* Ajusta el tamaño de la imagen para que quepa completamente en la sección */
   background-position: center;                    /* Centra la imagen en la sección */
   background-attachment: fixed;                   /* Fija la imagen de fondo para que no se desplace con el contenido */
