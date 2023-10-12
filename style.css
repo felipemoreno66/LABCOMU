@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+  /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ESTILOS PARA TODA LA PAGINA EN GENERAL XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+* {
+  margin: 0;                                     /* Elimina el margen exterior predeterminado de los elementos */
+  padding: 0;                                    /* Elimina el relleno predeterminado de los elementos */
+  box-sizing: border-box;                        /* Hace que el tamaño total incluya el borde */
+  text-decoration: none;                         /* Elimina la decoración de texto, como subrayado en enlaces */
+  scroll-behavior: smooth;                       /* Agrega un desplazamiento suave a las transiciones de desplazamiento */
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;                                /* Ancho de la barra de desplazamiento */
+}
+
+
+::-webkit-scrollbar-track {
+    background: #126b77;                     /* Color del fondo de la pista de la barra de desplazamiento */
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #d3dffd;                     /* Color de la barra de desplazamiento */
+    border-radius: 12px;                       /* Radio de esquina para el pulgar */
+    transition: all 0.3s ease;                 /* Transición suave de todos los cambios durante 0.3 segundos */
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #28b903;                     /* Color de fondo de la barra cuando se pasa el mouse */
+}
+
+
+  /* XXXXXXXXXXXXXXXX ESTILOS DE LA BARRA SUPERIOR XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+nav {
+  position: fixed;                                /* Barra de navegación fija en la parte superior de la ventana */
+  width: 100%;                                    /* Ancho completo de la barra de navegación */
+  padding: 13px 0;                                /* Relleno superior e inferior de 10px, sin relleno horizontal */
+  z-index: 998;                                   /* Índice z para controlar la superposición de elementos */
+  transition: all 0.3s ease;                      /* Transición suave para cambios de estilo */
+  font-family: 'Ubuntu', sans-serif;              /* Fuente utilizada para el texto en la barra de navegación */
+  text-align: center;                             /* Alineación del texto al centro dentro de la barra de navegación */
+}
+
+nav .navbar {
+  width: 94%;                                    /* Establece el ancho del contenedor al 85% del ancho del la barra de navegación */
+  display: flex;                                 /* Utiliza flexbox para organizar los elementos internos */
+  justify-content: space-between;                /* Distribuye el espacio restante entre los elementos internos */
+  align-items: center;                           /* Centra verticalmente los elementos internos */
+  margin: auto;                                  /* Centra el contenedor horizontalmente en su contenedor padre */
+}
+
+
+nav .navbar .logo a {
+
+  font-weight: 600;                              /* Establece la negrilla */
+  font-size: 45px;                               /* Establece el tamaño de la fuente en 45 píxeles */
+  color: #09555c;                              /* Establece el color del texto del logotipo */
+}
+
+nav .navbar .menu {
+  display: flex;                                 /* Utiliza flexbox para el diseño de los elementos del menú */
+  justify-content: center;                       /* Centra los elementos horizontalmente dentro del contenedor flex */
+  position: relative;                            /* Establece la posición del contenedor */
+}
+
+nav .navbar .menu li {
+  list-style: none;                              /* Elimina los marcadores de lista predeterminados en los elementos de lista */
+  margin: 0 40px;                                /* Establece un margen de 0 en la parte superior y inferior, y 8px en los lados izquierdo y derecho de los elementos de lista */
+}
+
+/*----- Estilos para los enlaces del menú en la barra de navegación ----------------*/
+.navbar .menu a {
+  font-size: 26px;                              /* Tamaño de fuente */
+  font-weight: 500;                             /* Grosor de fuente */
+  color: #09555c;                             /* Color del texto */
+  padding: 6px 0;                               /* Relleno superior e inferior */
+  transition: all 0.4s ease;                    /* Transición suave para animaciones */
+}
+
+/*---------Estilos al pasar el mouse por encima de los enlaces del menú------------ */
+.navbar .menu a:hover {
+  color: #1daa10;                           /* Cambia el color del texto al pasar el mouse */
+}
+
+
+/* ------Estilos de la barra de navegación cuando se vuelve dinamica--------------- */
+nav.sticky .navbar .logo a {
+  color: #9ADDCD;                          /* Color del logotipo en la barra dinamica */
+}
+
+nav.sticky .menu a {
+  color: #9ADDCD;                         /* Color de los enlaces del menú en la barra dinamica */
+}
+
+nav.sticky .menu a:hover {
+  color: #1daa10;                         /* Cambia el color del texto al pasar el mouse en la barra dinamica */
+}
+
+nav.sticky {
+  background: #858585;                    /* Color de fondo de la barra dinamica */
+  padding: 25px 0;                          /* Relleno superior e inferior en la barra dinamica */
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ESTILOS INICIO XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.ini {
+  height: 100vh;                                  /* Establece la altura de la sección al 100% del alto de la ventana (viewport height) */
+  width: 100%;                                    /* Establece el ancho de la sección al 100% del ancho disponible */
+  background-color: #fefeff;                    /* Establece un color de fondo blanco*/
+  background-image: url('./images/LOGO17.jpg');   /* Agrega la imagen de fondo "logo.png" */
+  background-size: contain;                       /* Ajusta el tamaño de la imagen para que quepa completamente en la sección */
+  background-position: center;                    /* Centra la imagen en la sección */
+  background-attachment: fixed;                   /* Fija la imagen de fondo para que no se desplace con el contenido */
+  background-repeat: no-repeat;                   /* Evita que la imagen de fondo se repita en los lados */
+  font-family: 'Ubuntu', sans-serif;              /* Establece la fuente de texto para el contenido en la sección */
+}
+
+.ini .ini-content {
+  width: 100%;                                      /* Ancho del contenido al 90% del contenedor */
+  height: 100%;                                    /* Altura del contenido al 100% del contenedor */
+  margin: auto;                                    /* Centrar el contenido horizontalmente */
+  display: flex;                                   /* Mostrar contenido como flexbox */
+  flex-direction: column;                          /* Establecer dirección de columna para elementos flex */
+  justify-content: center;                         /* Centrar contenido verticalmente */
+}
+
+
+.ini .texto-uno {
+  font-size: 25px;                                  /* Tamaño de fuente */
+  color: #0E2431;                                 /* Color del texto */
+}
+
+
+.ini .texto-dos {
+  color: #09555c;                                /* Color del texto */
+  font-size: 75px;                                 /* Tamaño de fuente */
+  font-weight: 600;                                /* Grosor de fuente */
+  margin-left: -3px;                               /* Ajuste de margen izquierdo */
+}
+
+
+.ini .texto-tres {
+  font-size: 40px;                                 /* Tamaño de fuente */
+  margin: 5px 0;                                   /* Margen superior e inferior */
+  color: #9ADDCD;                                /* Color del texto */
+}
+
+ /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ESTILOS NOSOSTROS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+/* Estilos para el contenedor de contenido para las diferentes secciones */
+section .content {
+  background: linear-gradient(to left top, #9ADDCD, #9ADDCD);                      /* Fondo degradado */
+  width: 100%;
+  margin: 40px auto;                                                                    /* Margen superior e inferior de 40px, centrado horizontalmente */
+  font-family: 'Poppins', sans-serif;                                                   /* Fuentes de texto */
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10%;                                                                    /* Relleno izquierdo del 10% */
+  padding-right: 10%;                                                                   /* Relleno derecho del 10% */
+}
+
+/* Estilos para el contenedor de las columnas */
+.about-details {
+  display: grid;                                                                       /* Mostrar como cuadrícula */
+  grid-template-columns: repeat(3, 1fr);                                               /* Tres columnas de igual ancho */
+  gap: 20px;                                                                           /* Espacio entre las columnas */
+}
+
+/* Estilos para las columnas en .column */
+.about-details .column {
+  background-color: #9ADDCD;                                                         /* Color de fondo */
+  padding: 20px;                                                                       /* Relleno interno */
+  text-align: center;                                                                  /* Alineación de texto */
+  border: 1px solid #9ADDCD;                                                         /* Borde */
+  display: flex;
+  flex-direction: column;                                                             /* Dirección de columna para elementos flex */
+}
+
+/* Estilos para el subtítulo en negrita */
+.about-details .column h2 {
+  color: #0E2431;                                                                   /* Color del texto */
+  font-size: 35px;                                                                    /* Tamaño de fuente */
+  font-weight: bold;                                                                  /* Grosor de fuente en negrita */
+  align-self: flex-start;                                                             /* Alinea el subtítulo en la parte superior */
+  margin: 0 auto;                                                                     /* Centra horizontalmente el subtítulo */
+}
+
+/* Estilos para el texto dentro de cada columna, centrado y justificado */
+.about-details .column p {
+  text-align: justify;                                                                /* Alineación justificada */
+  color: #0E2431;                                                                   /* Color del texto */
+  margin: 0 auto;                                                                     /* Centra el texto horizontalmente en la columna */
+}
+
+/* Estilos para el título de la sección */
+section .title {
+  display: flex;                                                                      /* Mostrar como flexbox */
+  justify-content: center;                                                            /* Centrar horizontalmente */
+  margin-bottom: 40px;                                                                /* Margen inferior */
+}
+
+/* Estilos para el texto del título */
+section .title span {
+  color: #0E2431;                                                                   /* Color del texto */
+  font-size: 35px;                                                                    /* Tamaño de fuente */
+  font-weight: 600;                                                                   /* Grosor de fuente */
+  position: relative;                                                                 /* Posición relativa */
+  padding-bottom: 8px;                                                                /* Espaciado inferior */
+}
+
+/* Pseudo-elementos (línea que acompaña al título) */
+section .title span::before,
+section .title span::after {
+  content: '';                                                                       /* Contenido vacío para pseudo-elementos */
+  position: absolute;                                                                /* Posición absoluta */
+  height: 3px;                                                                       /* Altura de la línea */
+  width: 100%;                                                                       /* Ancho del 100% */
+  background: #72A397;                                                             /* Color de fondo de la línea */
+  left: 0;                                                                           /* Alineación a la izquierda */
+  bottom: 0;                                                                         /* Alineación en la parte inferior */
+}
+
+.centered-image {
+  text-align: center;
+  margin-top: 20px; /* Puedes ajustar el margen según sea necesario */
+}
+
+.centered-image img {
+  max-width: 100%;
+  height: auto;
+}
+ /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ESTILOS PRODUCTOS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+
+.container {
+  max-width: 1250px;                                                                /* Ancho máximo del contenedor */
+  text-align: center;                                                               /* Alineación del texto al centro */
+  margin: auto;                                                                     /* Centrar horizontalmente */
+}
+
+/* Estilos para la ventana emergente del carrito */
+.cart-products {
+  max-height: 300px;                      /* Establece la altura máxima para la ventana emergente */
+  overflow-y: auto;                       /* Agrega una barra de desplazamiento vertical cuando el contenido excede la altura máxima */
+  scrollbar-width: thin;                  /* Define el ancho de la barra de desplazamiento (puede ser "thin" o "auto") */
+  scrollbar-color: #007bff #f0f0f0;   /* Define los colores de la barra de desplazamiento */
+}
+
+/* Estilos para la barra de desplazamiento */
+.cart-products::-webkit-scrollbar {
+  width: 10px;                            /* Ancho de la barra de desplazamiento en navegadores webkit (Chrome, Safari, etc.) */
+  height: 10px;                           /* Altura de la barra de desplazamiento en navegadores webkit */
+}
+
+.cart-products::-webkit-scrollbar-thumb {
+  background-color: #007bff;            /* Color del pulgar de la barra de desplazamiento */
+  border-radius: 5px;                     /* Borde redondeado del pulgar de la barra de desplazamiento */
+}
+
+.cart-products::-webkit-scrollbar-track {
+  background-color: #f0f0f0;            /* Color de fondo de la barra de desplazamiento */
+}
+/* Estilos para el logotipo */
+.logo {
+  width: 150px;                                                                      /* Ancho del logotipo */
+  height: 84px;                                                                      /* Altura del logotipo */
+  cursor: pointer;                                                                   /* Cambiar el cursor al pasar por encima */
+}
+
+/* Estilos para el carrito de compras */
+.cart {
+  width: 42px;                                                                       /* Ancho del ícono del carrito */
+  height: 39px;                                                                      /* Altura del ícono del carrito */
+}
+/* Estilos para el botón de Pagar */
+button {
+  background-color:  #00C9C5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  /* Agregar otros estilos según sea necesario */
+}
+
+/* Estilo cuando el mouse pasa sobre el botón */
+button:hover {
+  background-color: #b30000; /* Cambiar el color cuando el mouse pasa sobre el botón */
+}
+/* Estilos para el menú emergente de productos en el carrito */
+.cart-products {
+  position: absolute!important;                                                      /* Posición absoluta */
+  top: 85px;                                                                         /* Posicionamiento desde arriba */
+  right: -15px;                                                                      /* Posicionamiento desde la derecha */
+  background-color: #fff;                                                          /* Color de fondo */
+  padding: 0 18px;                                                                   /* Relleno interno */
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);                                         /* Sombra */
+  display: none;                                                                     /* Inicialmente oculto */
+  min-width: 290px;                                                                  /* Ancho mínimo */
+}
+
+/* Estilos al pasar el mouse sobre el carrito */
+.cart:hover {
+  margin-bottom: 16px;                                                              /* Cambio en el margen inferior */
+  transition-duration: .5s;                                                         /* Duración de la transición */
+}
+
+/* Estilos para la sección de productos */
+.products {
+  background-color: #fff;                                                        /* Color de fondo */
+  padding-top: 170px;                                                              /* Relleno superior */
+  display: flex;                                                                   /* Mostrar como flexbox */
+  flex-wrap: wrap;                                                                 /* Ajuste de envoltura de elementos */
+  justify-content: space-between;                                                  /* Espaciado entre elementos */
+  margin: 0;                                                                       /* Margen superior e inferior */
+  padding: 0;                                                                      /* Relleno */
+}
+
+/* Estilos para los cuadros de productos */
+.carts {
+  max-width: 300px;                                                               /* Ancho máximo de cada cuadro */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);                                    /* Sombra */
+  padding-bottom: 20px;                                                           /* Relleno inferior */
+  margin-bottom: 20px;                                                            /* Margen inferior */
+  text-align: center;                                                             /* Alineación de texto al centro */
+}
+
+/* Estilos para las imágenes de productos */
+.carts img {
+  max-width: 85%;                                                                 /* Ancho máximo de la imagen */
+  height: auto;                                                                   /* Altura automática para evitar deformación */
+}
+
+/* Estilos para los párrafos de descripción de productos */
+.carts p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;       /* Fuente de texto */
+  font-weight: 50;                                                                /* Grosor de fuente */
+  padding: 0 20px;                                                                /* Relleno izquierdo y derecho */
+  margin-bottom: 24px;                                                            /* Margen inferior */
+}
+
+/* Estilos para las etiquetas de producto */
+.carts div p {
+  position: absolute;                                                              /* Posición absoluta */
+  top: 0;                                                                          /* Posicionamiento desde arriba */
+  right: 0px;                                                                      /* Posicionamiento desde la derecha */
+  background-color: rgb(0, 235, 129);                                            /* Color de fondo */
+  color: #fff;                                                                   /* Color del texto */
+  padding: 2px 7px 4px 21px;                                                       /* Relleno */
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);                /* Forma */
+}
+
+/* Estilos para los botones de producto */
+.carts div {
+  position: relative;                                                            /* Posición relativa para etiquetas */
+}
+
+.carts a {
+  font-family: system-ui;                                                        /* Familia de fuentes */
+  text-decoration: none;                                                         /* Sin subrayado de enlace */
+  background: #00C9C5;                                                         /* Color de fondo */
+  padding: 9px 23px;                                                             /* Relleno */
+  color: #fff;                                                                 /* Color del texto */
+  font-size: 17px;                                                               /* Tamaño de fuente */
+  text-transform: uppercase;                                                     /* Transformación de texto a mayúsculas */
+  font-weight: 700;                                                              /* Grosor de fuente */
+}
+
+/* Estilos al pasar el mouse sobre los botones de producto */
+.carts a:hover {
+  background: #fff;                                                           /* Cambio de color de fondo */
+  color: rgb(0, 255, 85);                                                     /* Cambio de color de texto */
+  border: solid 2px rgb(0, 255, 85);                                          /* Borde */
+  transition-duration: .3s;                                                     /* Duración de la transición */
+}
+
+/* ------------------Estilos para el contenido del carrito emergente-------------------------------------- */
+.cart-products .item img {
+  width: 115px;                                                                 /* Ancho de la imagen */
+}
+
+.cart-products .item {
+  display: flex;                                                                /* Mostrar como flexbox */
+  align-items: center;                                                          /* Alineación vertical de elementos */
+  border-bottom: solid 2px rgb(0, 255, 85);                                   /* Borde inferior */
+}
+
+.cart-products .item .item-content {
+  margin: 0 19px;                                                               /* Margen izquierdo y derecho */
+  width: 201px;                                                                 /* Ancho */
+}
+
+.cart-products .item .item-content h5 {
+  margin: 0;                                                                    /* Margen */
+  font-size: 15px;                                                              /* Tamaño de fuente */
+  font-weight: 400;                                                             /* Grosor de fuente */
+  font-family: system-ui;                                                       /* Familia de fuentes */
+}
+
+.cart-products .item .item-content h6 {
+  margin: 0;                                                                    /* Margen */
+  font-size: 13px;                                                              /* Tamaño de fuente */
+  font-weight: 400;                                                             /* Grosor de fuente */
+  font-family: system-ui;                                                       /* Familia de fuentes */
+}
+
+.cart-products .item span {
+  background-color: red;                                                      /* Color de fondo */
+  padding: 0px 5px;                                                             /* Relleno */
+  border-radius: 50%;                                                           /* Radio de esquina */
+  color: #fff;                                                                /* Color del texto */
+  font-family: system-ui;                                                       /* Familia de fuentes */
+  cursor: pointer;                                                              /* Cambio de cursor al pasar por encima */
+}
+
+.cart-products h3 {
+  margin-bottom: 0px;                                                           /* Margen inferior */
+}
+
+.cart-products .item .item-content h5.cart-price {
+  font-weight: 700;                                                             /* Grosor de fuente */
+}
+
+/* Estilos para la sección del encabezado ubicación del carrito*/
+.header-section {
+  display: flex;                                                               /* Mostrar como flexbox */
+  justify-content: space-between;                                              /* Espaciado entre elementos */
+  margin: auto;                                                                /* Centrar horizontalmente */
+  align-items: center;                                                         /* Alineación vertical de elementos */
+  position: relative;                                                          /* Posición relativa */
+  padding-left: 0%;                                                            /* Relleno izquierdo */
+}
+
+/* Estilos para el botón de cierre */
+p.close-btn {
+  top: -4px;                                                                   /* Posicionamiento desde arriba */
+  right: 60px;                                                                 /* Posicionamiento desde la derecha */
+  cursor: pointer;                                                             /* Cambio de cursor al pasar por encima */
+  color: #000;                                                               /* Color de texto */
+}
+
+ /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ESTILOS PROVEEDORES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+/* Estilos para el contenedor de cajas */
+.pro .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* 
+     Muestra las cajas en un diseño de flexbox, 
+     envuelto en varias filas si no caben en una sola fila, 
+     y justificado para que haya espacio entre las cajas.
+  */
+}
+
+/* Diseño de las cajas */
+.pro .boxes .box {
+  margin: 20px 0;
+  width: calc(100% / 3 - 150px);
+  /*
+     Margen exterior de 20px arriba y abajo, y 0 en los lados izquierdo y derecho.
+     El ancho de las cajas se calcula automáticamente para que haya tres cajas por fila,
+     con un espacio de 150px entre cada caja.
+  */
+  text-align: center;                              /* Texto centrado horizontalmente en cada caja */
+  border-radius: 12px;                             /* Bordes redondeados */
+  padding: 30px 10px;                              /* Relleno interno de 30px arriba y abajo, y 10px a los lados */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);    /* Sombra suave */
+  cursor: default;                                 /* Cursor predeterminado */
+  transition: all 0.4s ease;                       /* Transición suave para los cambios de estilo */
+}
+
+/* Animación en las cajas */
+.pro .boxes .box:hover {
+  background: #4070f4;                           /* Cambio de fondo al hacer hover */
+  color: #fff;                                   /* Cambio de color de texto al hacer hover */
+}
+
+/* Estilos para las imágenes dentro de las cajas */
+.pro .boxes .box img {
+  max-width: 100%;                                 /* Ajuste del ancho máximo de la imagen */
+  height: auto;                                    /* Altura ajustable automáticamente */
+  display: block;                                  /* Elimina el espacio adicional debajo de la imagen */
+  margin: 0 auto 10px auto;                        /* Margen inferior de la imagen */
+  transition: all 0.4s ease;                       /* Transición suave para la animación */
+}
+
+/* Animación al hacer hover en las imágenes */
+.pro .box:hover img {
+  transform: scale(1.1);                          /* Escala la imagen al hacer hover */
+}
+
+/* Animación de texto al hacer hover en las cajas */
+.pro .boxes .box:hover .topic,
+.pro .boxes .box:hover p {
+  color: #000000; /* Cambio de color de texto al hacer hover */
+  transition: all 0.4s ease; /* Transición suave para la animación */
+}
+
+/* Estilos de texto al hacer hover en las cajas */
+.pro.boxes .box:hover .topic,
+.pro .boxes .box:hover p {
+  color: #fff; /* Cambio de color de texto al hacer hover */
+}
+
+ /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX CONTACTO XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX*/
+.contact{
+  background: #ffffff;
+}
+.contact .content{
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.contact .text{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}

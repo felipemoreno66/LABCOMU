@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <meta charset="UTF-8"> <!-- Declaración del conjunto de caracteres utilizado (UTF-8) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Configuración para el uso de la versión más reciente de Internet Explorer -->
+    <link rel="icon" type="image/svg+xml" href="./images/PESTAÑA.jpg" /> <!-- Enlace al ícono de la página web (favicon) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos móviles -->
+    <title>DULCE TENTACIÓN</title> <!-- Título de la página web que se muestra en la pestaña del navegador -->
+    <link rel="stylesheet" href="./style.css"> <!-- Enlace a la hoja de estilo CSS externa llamada "style.css" -->
+
+</head>
+<body>
+ <!-- XXXXXXXXXXXXXXXXXXXX  BARRA DE NAVEGACIÓN XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  --> 
+      <nav> <!-- Elemento de navegación de la pagina-->
+        <div class="navbar"> <!-- Contenedor principal de la barra de navegación -->
+         <div class="logo"><a href="#">Dulce  Tentación</a></div>  <!-- Logotipo de la página web con un enlace a la página principal -->
+          <img src="./images/DULCE_VERDE.gif"width =50px alt="">
+           <ul class="menu"> <!-- Lista de elementos del menú de navegación -->
+              <li><a href="#INICIO">Inicio</a></li> <!-- Enlace "Inicio" que apunta a un elemento con el ID "ini" en la página -->
+              <li><a href="#about">Nosotros</a></li> <!-- Enlace "Nosotros" que apunta a un elemento con el ID "about" en la página -->
+              <li><a href="#products">Productos</a></li> <!-- Enlace "Productos" que apunta a un elemento con el ID "products" en la página -->
+              <li><a href="#pro">Proveedores</a></li> <!-- Enlace "Proveedores" que apunta a un elemento con el ID "pro" en la página -->
+              <li><a href="#contact">Contacto</a></li> <!-- Enlace "Contacto" que apunta a un elemento con el ID "contact" en la página -->
+          </ul>
+          <div class="header-section container"> <!-- Sección de encabezado dentro del contenedor -->
+            <img onclick="showCart(this)" class="cart" src="./images/cart2.png" alt=""> <!-- Imagen del carrito de compras con un evento onclick para mostrar el carrito -->
+            <p class="count-product">0</p>
+              </div>
+                 <div class="cart-products" id="products-id"> <!-- Sección del carrito de compras con un ID "products-id" -->
+                    <p class="close-btn" onclick="closeBtn()">X</p> <!-- Botón de cierre del carrito de compras con un evento onclick para cerrar el carrito -->
+                    <h3>Mi carrito</h3> <!-- Título "Mi carrito" del carrito de compras -->
+                      <div class="card-items"> <!-- Contenedor de elementos del carrito de compras -->
+                     </div>
+                     <h2>Total para pagar: $<strong class="price-total">0</strong></h2>
+                     <h2>Valor del domicilio:10000 $ </h2>
+                     <a id="realizarPago" onclick="realizarPago()" href="https://docs.google.com/forms/d/e/1FAIpQLSdu2LLAr_Z-e-UBoi47kXX-D0uyRP4gqxtGnwscp2pNjbrSQQ/viewform" target=" _blank">Pagar</a>
+
+
+                  </div>
+            </div>
+      </nav>
+  
+ <!-- XXXXXXXXXXXXXXXXXXXX  INICIO XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  -->
+
+  <section class="ini" id="INICIO"> <!-- Creación de una sección con la clase "ini" y el ID "ini" -->
+    <div class="ini-content"> <!-- Contenedor principal de la sección de inicio -->
+      <div class="texto"> <!-- Contenedor de texto dentro de la sección de inicio -->
+        <div class="texto-uno"> </div> <!-- Div vacío sin contenido específico -->
+        <div class="texto-dos"></div> <!-- Div que contiene el título "Dulce tentación" -->
+        <div class="texto-tres"></div> <!-- Div que contiene un subtítulo -->
+      </div>
+    </div>
+  </section>
+
+ <!-- XXXXXXXXXXXXXXXXXXXX  NOSOTROS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  -->
+
+  <section class="about" id="about"> <!-- Creación de una sección con la clase "about" y el ID "about" -->
+    <div class="content"> <!-- Contenedor principal de la sección "about" -->
+      <div class="title"><span>¿Quiénes somos?</span></div> <!-- Título de la sección -->
+      <div class="about-details"> <!-- Contenedor de detalles de "about" -->
+        <div class="column"> <!-- Primera columna -->
+         <h2>Conócenos</h2> <!-- Subtítulo -->
+         <p>Somos Dulce Tentación, una empresa proveedora de los mejores dulces a nivel nacional. Trabajamos con las marcas colombianas más reconocidas y ofrecemos una amplia gama de productos, desde chocolates hasta gomitas y caramelos. Nuestra misión es endulzar la vida de nuestros clientes y crear momentos especiales. Destacamos en la elaboración de anchetas personalizadas ideales para regalar en fechas especiales, como cumpleaños, aniversarios y festividades. También contamos con una política de domicilio que cubre Bogotá y sus alrededores, para que puedas disfrutar de nuestros dulces en la comodidad de tu hogar.</p>
+       </div>
+       <div class="column"> <!-- Segunda columna -->
+         <h2>Lo que ofrecemos</h2> <!-- Subtítulo -->
+          <p>En Dulce Tentación, ofrecemos una amplia variedad de dulces y chocolates de alta calidad, con opciones para todos los gustos. Además, brindamos regalos corporativos únicos y personalizados que incluyen la posibilidad de imprimir logotipos o mensajes corporativos, ideales para impresionar a clientes y socios. También suministramos dulces y chocolates para eventos privados y fiestas, ayudando a crear momentos memorables y dulces en tus celebraciones. Nuestra atención se centra en ofrecer un servicio al cliente de primer nivel, proporcionando asesoramiento experto para elegir los productos adecuados y garantizando entregas puntuales con una atención personalizada para asegurar tu satisfacción en cada ocasión.</p>
+        </div>
+        <div class="column"> <!-- Tercera columna -->
+          <h2>Política de domicilio</h2> <!-- Subtítulo -->
+         <p>Dulce Tentación ofrece cobertura de entrega en toda Bogotá y sus alrededores. Nuestro objetivo es proporcionar un servicio de entrega rápido y confiable para que nuestros clientes puedan disfrutar de nuestros productos cómodamente en sus hogares o lugares de trabajo. Nuestra política de domicilio está diseñada para asegurar la entrega segura y oportuna de tus dulces favoritos. En Dulce Tentación, estamos comprometidos a satisfacer tus antojos de dulces donde sea que te encuentres en Bogotá. ¡Confía en nosotros para llevar la dulzura a tu puerta!</p>
+       </div>
+      </div>
+      <div class="centered-image">
+        <img src="/images/quienes somos.png" alt="Imagen representativa">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- XXXXXXXXXXXXXXXXXXXX  PRODUCTOS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  -->
+ <section class="container" id="products"> <!-- Creación de una sección con la clase "container" -->
+  <div class="title"><span>Productos</span></div>
+  <div class="products" > <!-- Contenedor principal de los productos -->
+      <!-- Primer producto -->
+      <div class="carts">
+          <div>
+             <img src="./images/producto1.jpg" alt=""> <!-- Imagen del producto -->
+              <p><span>9000</span>$</p> <!-- Precio del producto -->
+          </div>
+          <p class="title">CHOCOBREAK COOKIES 30 UNI.</p> <!-- Nombre del producto -->
+          <a href="" data-id="1" class="btn-add-cart">Agregar al carro</a> <!-- Botón para agregar al carrito -->
+      </div>
+      <!-- Segundo producto -->
+      <div class="carts">
+          <div>
+              <img src="./images/producto2.jpg" alt="">
+              <p><span>10000</span>$</p>
+          </div>
+          <p class="title">CHOCOBREAK FRUTAL 50 UNI.</p>
+          <a href="" class="btn-add-cart" data-id="2">Agregar al carro</a>
+      </div>
+      <!-- Tercer producto -->
+      <div class="carts">
+          <div>
+              <img src="./images/producto3.jpg" alt="">
+              <p><span>5500</span>$</p>
+          </div>
+          <p class="title">MUU CREMA 12 UNI.</p>
+          <a href="" data-id="3" class="btn-add-cart">Agregar al carro</a>
+      </div>
+      
+      <!-- Cuarto producto -->
+      <div class="carts">
+          <div>
+              <img src="./images/producto4.jpg" alt="">
+              <p><span>19000</span>$</p>
+          </div>
+          <p class="title">CABLE VIDAL 64 UNI.</p>
+          <a href="" data-id="4" class="btn-add-cart">Agregar al carro</a>
+      </div>
+      <!-- Quinto producto -->
+      <div class="carts">
+          <div>
+              <img src="./images/producto5.png" alt="">
+              <p><span>9500</span>$</p>
+          </div>
+          <p class="title">MONTBLANC BAILEYS</p>
+          <a href="" data-id="5" class="btn-add-cart">Agregar al carro</a>
+      </div>
+      <!-- Sexto producto -->
+      <div class="carts">
+          <div>
+              <img src="./images/producto6.jpg" alt="">
+              <p><span>10500</span>$</p>
+          </div>
+          <p class="title">JET MINI 24 UNI.</p>
+          <a href="" data-id="6" class="btn-add-cart">Agregar al carro</a>
+      </div>
+      <!-- Séptimo producto -->
+      <div class="carts">
+          <div>
+              <img src="./images/producto7.jpg" alt="">
+              <p><span>10000</span>$</p>
+          </div>
+          <p class="title">BARRILETE 40 UNI.</p>
+          <a href="" data-id="7" class="btn-add-cart">Agregar al carro</a>
+      </div>
+      <!-- Octavo producto -->
+      <div class="carts">
+          <div>
+              <img src="./images/producto8.jpg" alt="">
+              <p><span>5000</span>$</p>
+          </div>
+          <p class="title">MAX COMBI 50 UNI.</p>
+          <a href="" data-id="8" class="btn-add-cart">Agregar al carro</a>
+      </div>
+      
+      <!-- Noveno producto -->
+      <div class="carts">
+          <div>
+              <img src="./images/producto9.png" alt="">
+              <p><span>21500</span>$</p>
+          </div>
+          <p class="title">GRISSLY BOA 25 UNI.</p>
+          <a href="" data-id="9" class="btn-add-cart">Agregar al carro</a>
+      </div>
+      <!-- Décimo producto -->
+      <div class="carts">
+          <div>
+              <img src="./images/producto10.jpg" alt="">
+              <p><span>10500</span>$</p>
+          </div>
+          <p class="title">SPARKIES BARRA 70 UNI.</p>
+          <a href="" data-id="10" class="btn-add-cart">Agregar al carro</a>
+      </div>
+      <!-- Undécimo producto -->
+      <div class="carts">
+          <div>
+              <img src="./images/producto11.jpg" alt="">
+              <p><span>4000</span>$</p>
+          </div>
+          <p class="title">FRUNAS 12 UNI.</p>
+          <a href="" data-id="11" class="btn-add-cart">Agregar al carro</a>
+        </div>     
+         <!-- Doceabo producto -->
+      <div class="carts">
+        <div>
+            <img src="./images/producto12.jpg" alt="">
+            <p><span>10500</span>$</p>
+        </div>
+        <p class="title">PIN POP 24 UNI.</p>
+        <a href="" data-id="12" class="btn-add-cart">Agregar al carro</a>
+      </div>     
+      <!-- 13 producto -->
+      <div class="carts">
+        <div>
+            <img src="./images/ancheta1.png" alt="">
+            <p><span>30000</span>$</p>
+        </div>
+        <p class="title">ANCHETA #1</p>
+        <a href="" data-id="13" class="btn-add-cart">Agregar al carro</a>
+      </div>
+      <!-- 14 producto -->
+      <div class="carts">
+        <div>
+            <img src="./images/ancheta2.png" alt="">
+            <p><span>30000</span>$</p>
+        </div>
+        <p class="title">ANCHETA #2</p>
+        <a href="" data-id="14" class="btn-add-cart">Agregar al carro</a>
+      </div> 
+      <!-- 15 producto -->
+      <div class="carts">
+        <div>
+            <img src="./images/ancheta3.png" alt="">
+            <p><span>30000</span>$</p>
+        </div>
+        <p class="title">ANCHETA #3</p>
+        <a href="" data-id="15" class="btn-add-cart">Agregar al carro</a>
+      </div>  
+      <!-- 16 producto -->
+      <div class="carts">
+        <div>
+            <img src="./images/ancheta4.png" alt="">
+            <p><span>30000</span>$</p>
+        </div>
+        <p class="title">ANCHETA #4</p>
+        <a href="" data-id="16" class="btn-add-cart">Agregar al carro</a>
+      </div>                 
+  </div>
+</section>
+
+ <!-- XXXXXXXXXXX PROOVEDORES XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  -->
+ 
+ <section class="pro" id="pro">
+  <div class="content">
+    <div class="title"><span>Nuestros Proveedores</span></div>
+    <div class="boxes">
+      <!-- Primer cuadro -->
+      <div class="box">
+        <div class="icon">
+          <img src="./images/Provedor1.png" alt="Logo de Proveedor 1">
+        </div>
+        <div class="topic"></div>
+        <p></p>
+      </div>
+      
+      <!-- Segundo cuadro -->
+      <div class="box">
+        <div class="icon">
+          <img src="./images/Provedor2.png" alt="Logo de Proveedor 2">
+        </div>
+        <div class="topic"></div>
+        <p></p>
+      </div>
+      
+      <!-- Tercer cuadro -->
+      <div class="box">
+        <div class="icon">
+          <img src="./images/Provedor3.png" alt="Logo de Proveedor 3">
+        </div>
+        <div class="topic"></div>
+        <p></p>
+      </div>
+      
+      <!-- Cuarto cuadro -->
+      <div class="box">
+        <div class="icon">
+          <img src="./images/Provedor4.png" alt="Logo de Proveedor 4">
+        </div>
+        <div class="topic"></div>
+        <p></p>
+      </div>
+      
+      <!-- Quinto cuadro -->
+      <div class="box">
+        <div class="icon">
+          <img src="./images/Provedor5.png" alt="Logo de Proveedor 5">
+        </div>
+        <div class="topic"></div>
+        <p></p>
+      </div>
+
+      <!-- Sexto cuadro -->
+      <div class="box">
+        <div class="icon">
+          <img src="./images/Provedor6.png" alt="Logo de Proveedor 6">
+        </div>
+        <div class="topic"></div>
+        <p></p>
+      </div>
+      
+      <!-- Séptimo cuadro -->
+      <div class="box">
+        <div class="icon">
+          <img src="./images/Provedor7.png" alt="Logo de Proveedor 7">
+        </div>
+        <div class="topic"></div>
+        <p></p>
+      </div>
+      
+      <!-- Octavo cuadro -->
+      <div class="box">
+        <div class="icon">
+          <img src="./images/jumbo-logo.png" alt="Logo de Proveedor 8">
+        </div>
+        <div class="topic"></div>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- CONTACTO -->
+      <img src="./images/CONTACTOS.jpg" alt="Imagen de contacto" style="display: block; margin: 0 auto;">
+      <section class="contact" id="contact">
+        <div class="content">
+          <div class="title"><span>Contacto</span></div>
+          <div class="text">
+            <div class="topic">Estamos ubicamos en la Calle 22D # 72-41, Bogotá, Colombia </div>
+            <p>Numero de celular de contacto principal:+57 3016625907</p>
+            <p>Numero de celular de contacto auixiliar:+57 3053548092</p>
+            <p>est.david.moreno@unimilitar.edu.co, est.andrey.plazas@unimilitar.edu.co</p>
+          </div>
+        </div>
+      </section>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="./custom.js" ></script>
+    <script src="script.js"></script>
+</body>
+</html>
